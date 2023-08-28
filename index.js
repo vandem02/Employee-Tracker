@@ -1,10 +1,15 @@
 const inquirer = require('inquirer');
 const cTable = require('console.table');
+const departmentMenu = require('./routes/departmentroute.js')
 
 
-
-function mainMenu() {
-    console.log(".:: | MAIN MENU | ::.");
+const mainMenu = () => {
+    console.log(`
+=================
+     Welcome
+ -| MAIN MENU |-
+=================
+    `);
     inquirer
         .prompt([
             {
@@ -27,7 +32,7 @@ function mainMenu() {
             switch (menuQuestion) {
                 case 'View all departments':
                     console.clear()
-                    console.log('All Departments')
+                    departmentMenu()
                     break;
                 case 'View all roles':
                     console.clear()
@@ -63,4 +68,4 @@ function mainMenu() {
 
 };
 
-mainMenu()
+module.exports = mainMenu;
