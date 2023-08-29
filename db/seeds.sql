@@ -17,7 +17,7 @@ INSERT INTO employee (first_name, last_name, role_id, mgr_id) VALUES
   ('Emily', 'Smith', 5, 2),
   ('Sarah', 'Danihel', 4, 4),
   ('Antonio', 'Sarmadi', 7, NULL),
-  ('Samantha', 'Lytle', 4,2);
+  ('Samantha', 'Lytle', 4, 2);
 
 INSERT INTO role (title, salary, dpt_id) VALUES
   ('Sales Lead', '75000', 3),

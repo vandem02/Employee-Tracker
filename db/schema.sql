@@ -16,8 +16,7 @@ CREATE TABLE
         id INTEGER AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(30) NOT NULL,
         salary DECIMAL(10, 2) NOT NULL,
-        dpt_id INTEGER,
-        CONSTRAINT fk_dpt FOREIGN KEY (dpt_id) REFERENCES department(id) ON DELETE SET NULL
+        dpt_id INTEGER
     );
 CREATE TABLE
     employee (
@@ -25,7 +24,5 @@ CREATE TABLE
         first_name VARCHAR(30) NOT NULL,
         last_name VARCHAR(30) NOT NULL,
         role_id INTEGER,
-        mgr_id INTEGER,
-        CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES emp_role(id) ON DELETE SET NULL,
-        CONSTRAINT fk_emp FOREIGN KEY (mgr_id) REFERENCES employee(id) ON DELETE SET NULL
+        mgr_id INTEGER
     );
