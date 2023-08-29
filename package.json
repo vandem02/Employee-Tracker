@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dopecello/employee-tracker.git"
+    "url": "git+https://github.com/vandem02/Employee-Tracker.git"
   },
-  "author": "William Locke",
+  "author": "Evan Vandenberg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dopecello/employee-tracker/issues"
+    "url": "https://github.com/vandem02/Employee-Tracker/issues"
   },
-  "homepage": "https://github.com/dopecello/employee-tracker#readme",
+  "homepage": "https://github.com/vandem02/Employee-Tracker#readme",
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^8.2.4",
