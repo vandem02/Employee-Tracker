@@ -1,32 +1,32 @@
--- seeds.sql is for placeholder data
+INSERT INTO department (dpt_name) VALUES
+  ('Accounting'),
+  ('Marketing'),
+  ('Sales'),
+  ('Information Technology'),
+  ('Human Resources');
 
--- syntax
--- INSERT INTO #table_name (#column_names) VALUES 
--- ('#data'),
--- ('#data');
+INSERT INTO employee (first_name, last_name, role_id, mgr_id) VALUES
+  ('Robert', 'Locke', 2, NULL),
+  ('Kristina', 'Schaberg', 1, NULL),
+  ('Bruce', 'Springer', 4, 2),
+  ('Peter', 'Park', 2, 2),
+  ('Derek', 'Chan', 3, 3),
+  ('Paulina', 'Rios', 6, 3),
+  ('Heather', 'Mealey', 8, 4),
+  ('Sandy', 'Cheeks', 7, 3),
+  ('Emily', 'Smith', 5, 2),
+  ('Sarah', 'Danihel', 4, 4),
+  ('Antonio', 'Sarmadi', 7, NULL),
+  ('Samantha', 'Lytle', 4,2);
 
-
--- departments
-INSERT INTO departments (name) VALUES
-('Office'),
-('Sales'),
-('Tech');
-
--- roles
-INSERT INTO roles (title, salary, department_id) VALUES
-('Office Rep', 40000, department_id),
-('Sales Person', 45000, department_id),
-('Install Tech', 50000, department_id),
-('Service Tech', 55000, department_id),
-('Operartions', 65000, department_id);
-
--- employees
-INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES
-('David', 'Liebherr', role_id, manager_id),
-('John', 'Doe', role_id, manager_id),
-('Ben', 'Garrison', role_id, manager_id),
-('Danny', 'Greco', role_id, manager_id),
-('Nancy', 'Desandras', role_id, manager_id),
-('Russal', 'Zein', role_id, manager_id),
-('Heather', 'Repp', role_id, manager_id);
-
+INSERT INTO role (title, salary, dpt_id) VALUES
+  ('Sales Lead', '75000', 3),
+  ('Sales Associate', '50000', 3),
+  ('Tech Lead', '160000', 4),
+  ('Junior Engineer', '70000', 4),
+  ('Account Manager', '70000', 1),
+  ('Accountant', '80000', 1),
+  ('Payroll Specialist', '60000', 5),
+  ('Marketing Strategist', '120000', 2),
+  ('Graphic Designer', '60000', 2),
+  ('HR Manager', '90000', 5);
